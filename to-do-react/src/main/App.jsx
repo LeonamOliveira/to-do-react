@@ -1,15 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import { Tarefa } from '../presentation/components/Tarefa'
+import Batata from '../presentation/components/Botao'
+import '../presentation/styles/App.css'
+export default function App() {
   return (
-    <div className="App">
-      
+    <>
+    <div>
+      <input />
+      <Batata />
     </div>
+    <div>
+      <Tarefa />
+    </div>
+    </>
   )
 }
-
-export default App
